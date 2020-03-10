@@ -1,0 +1,4 @@
+FROM openjdk:13-jdk-alpine
+VOLUME /tmp
+COPY target/ZuulService-0.0.1-SNAPSHOT.jar ZuulService.jar
+ENTRYPOINT ["java","-jar","ZuulService.jar"]
